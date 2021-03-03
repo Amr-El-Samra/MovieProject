@@ -1,0 +1,163 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+}
+                                               
+.openbar
+{
+    position: fixed;
+    left:-250px;
+    top: 0;
+    bottom: 0;
+    z-index: 55555555555555555;
+}
+.sidebar
+{
+    background-color: black;
+    position: relative;
+    width: 250px;
+}
+.nowPlayingLink, .popularLink,.topRatedLink,.trendingLink,.upcomingLink,.contactsLink
+{
+    font-size: 15px;
+    position: relative;
+    top:500px;
+}
+.nowPlayingLink:hover
+{
+    color: #d7300bbd !important;
+    transition: all 0.4s;  
+}
+
+.popularLink:hover
+{
+    color: #d7300bbd !important;
+    transition: all 0.4s;  
+}
+
+.topRatedLink:hover
+{
+    color: #d7300bbd !important;
+    transition: all 0.4s;  
+}
+
+.trendingLink:hover
+{
+    color: #d7300bbd !important;
+    transition: all 0.4s;  
+}
+
+.upcomingLink:hover
+{
+    color: #d7300bbd !important;
+    transition: all 0.4s;  
+}
+
+.contactsLink:hover
+{
+    color: #d7300bbd !important;
+    transition: all 0.4s;  
+}
+.sidebarLogos
+{
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+}
+.sidebarLogos .fab, .fas{
+    cursor: pointer;
+}
+.sidebarLogos .fab:hover
+{
+    color: #d7300bbd !important;
+    transition: all 0.4s;  
+}
+.sidebarLogos .fas:hover
+{
+    color: #d7300bbd !important;
+    transition: all 0.4s;  
+}
+.visibleBar
+{
+    font-size: 30px;
+    cursor: pointer;
+    background-color: white;
+    height: 100vh;
+    width: 60px;
+    text-align: center;
+    position: relative;
+}
+.sidebar-img
+{
+    width: 30px;
+    height: 50px;
+    margin-left: 16px;   
+}
+#open
+{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: black;
+    font-size: 30px;
+}
+.visibleBar .fa-globe
+{
+    position: absolute;
+    bottom: 75px;
+    left: 20px;
+}
+.visibleBar .fa-share-alt
+{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.inputs
+{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+    font-size: 17px;
+}
+.contact
+{
+    font-weight: 250;
+}
+#nameErr, #emailErr, #phoneErr, #ageErr, #passErr, #rePassErr{
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    display: none;
+}
+.displayMovies
+{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.movieInfo
+{
+    color: black;
+    background-color: rgba(182, 189, 201,0.7);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.displayMovies:hover .movieInfo
+{
+    top:0;
+    opacity: 1;
+}
